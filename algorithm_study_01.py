@@ -51,6 +51,7 @@ class Queue(list):
     def get(self):
         return self.pop(0)
 
+    
 q = Queue()
 q.put(1)
 q.put(5)
