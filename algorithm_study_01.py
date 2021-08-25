@@ -9,7 +9,7 @@
 class Stack(list):
     push = list.append
     def peek(self):
-        return self[-1]         # self[len(self - 1)]
+        return self[-1]         
 
 
 s = Stack()
