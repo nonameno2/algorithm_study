@@ -1,3 +1,5 @@
+# https://programmers.co.kr/learn/courses/30/lessons/42583
+
 def solution(bridge_length, weight, truck_weights):
     
     answer = 0                                              # the time it takes for all trucks to cross the bridge, zero initialization
