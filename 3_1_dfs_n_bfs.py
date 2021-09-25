@@ -12,16 +12,16 @@ for _ in range(m):
 
 # depth-first search
 visited = []    
-def dfs(graph, start):                                             
+def dfs(start):                                             
     visited.append(start)
     print(start, end = ' ')
     # adjacent edges
     for i in range(n + 1):                                  
         if (graph[start][i] == 1) and (i not in visited):   
-            dfs(graph, i)
+            dfs(i)
 
 # breadth-first search
-def bfs(graph, start):    
+def bfs(start):    
     visited = []                                           
     q = deque()      # deque(append, popleft) : O(1) time complexity   
     visited.append(start)                                  
@@ -35,8 +35,6 @@ def bfs(graph, start):
                 visited.append(i)
                 q.append(i)
 
-dfs(graph, v)
+dfs(v)
 print()
-bfs(graph, v)
-
-
+bfs(v)
